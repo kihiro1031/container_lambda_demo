@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  f_hello_world:
+    tty: true
+    build:
+      context: .
+      dockerfile: f_hello_world/Dockerfile
+    image: hello_world
+    ports:
+      - "9000:8080"
+    container_name: f_hello_world
